@@ -17,7 +17,6 @@ header {
     padding: 10px 20px;
     height: 60px;
     justify-content: space-between;
-    z-index: 1;
 }
 
 .main-header {
@@ -35,18 +34,15 @@ header {
 .navbar {
     display: flex;
     background-color: #f6f6f6;
-    justify-content: flex-end;
     padding: 10px 20px;
 }
 
 .navbar a {
-    display: block;
     color: #000;
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
     font-size: 24px;
-    transition: color 0.3s ease;
 }
 
 .navbar .main {
@@ -57,58 +53,57 @@ header {
     color: #807d7d;
 }
 
-.home{
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.home p{
+
+.home p {
     font-family: "Itim", cursive;
     font-size: 1rem;
-    font-weight: 200;
 }
+
 .home-img img {
     margin-top: 2rem;
     position: relative;
     cursor: pointer;
     width: 16vw;
-    max-width: 100%; 
-    height: auto; 
-    border-radius: 25%; 
+    max-width: 100%;
+    height: auto;
+    border-radius: 25%;
+
 }
 
-.home-content{
+.home-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 1rem;
-    font-weight: 600;
     margin-top: 3rem;
 }
+
 .home-content h3 {
     font-family: "Edu NSW ACT Foundation", cursive;
     font-size: 3rem;
-    font-weight: 1000;
 }
 
-.page2 {
-    background-color: aqua;
+.bill-container,
+.ohm-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 }
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-p {
-    line-height: 1.6;
-}
-img {
-    max-width: 100%;
+
+.bill-container img,
+.ohm-container img {
+    max-width: 85%;
     height: auto;
     margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 480px) {
@@ -116,18 +111,20 @@ img {
         font-size: 16px;
         margin-left: 10px;
     }
+
     .navbar .main {
         margin-right: 10px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .home-img img {
-        max-width: 70%; /* Adjust maximum width for smaller screens */
+        max-width: 70%;
     }
 }
 
 @media screen and (max-width: 768px) {
     .home-content h3 {
-        font-size: 2rem; /* Adjust font size for smaller screens */
+        font-size: 2rem;
     }
 }
