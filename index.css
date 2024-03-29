@@ -1,12 +1,10 @@
 body {
     background: #fff;
-    margin: 0;
-    padding: 0;
-    font-family: "Edu NSW ACT Foundation", cursive;
-    font-weight: 650px
 }
 
-header {
+/* ส่วนหัว */
+
+.header {
     display: flex;
     align-items: center;
     position: fixed;
@@ -14,14 +12,18 @@ header {
     left: 0;
     right: 0;
     background-color: #f6f6f6;
+    /* สีพื้นหลังของส่วนหัว */
     padding: 10px 20px;
     height: 60px;
     justify-content: space-between;
 }
 
+/* ส่วนหัวหลัก */
+
 .main-header {
     display: flex;
     color: #000;
+    /* สีข้อความดำ */
     text-align: center;
     font-size: 40px;
     text-decoration: none;
@@ -29,16 +31,21 @@ header {
 
 .main-header:hover {
     color: #807d7d;
+    /* เปลี่ยนสีข้อความเมื่อโฮเวอร์ */
 }
+
+/* เมนู */
 
 .navbar {
     display: flex;
     background-color: #f6f6f6;
+    /* สีพื้นหลังของเมนู */
     padding: 10px 20px;
 }
 
 .navbar a {
     color: #000;
+    /* สีข้อความดำ */
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
@@ -51,7 +58,10 @@ header {
 
 .navbar a:hover {
     color: #807d7d;
+    /* เปลี่ยนสีข้อความเมื่อโฮเวอร์ */
 }
+
+/* เนื้อหาหลัก */
 
 .home {
     display: flex;
@@ -62,6 +72,7 @@ header {
 
 .home p {
     font-family: "Itim", cursive;
+    /* ฟอนต์แบบอักษร */
     font-size: 1rem;
 }
 
@@ -73,7 +84,6 @@ header {
     max-width: 100%;
     height: auto;
     border-radius: 25%;
-
 }
 
 .home-content {
@@ -87,8 +97,11 @@ header {
 
 .home-content h3 {
     font-family: "Edu NSW ACT Foundation", cursive;
+    /* ฟอนต์แบบอักษร */
     font-size: 3rem;
 }
+
+/* คอนเทนเนอร์ของรูปภาพ */
 
 .bill-container,
 .ohm-container {
@@ -106,6 +119,8 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* ส่วนที่ปรับเปลี่ยนขนาดหน้าจอ */
+
 @media screen and (max-width: 480px) {
     .navbar a {
         font-size: 16px;
@@ -117,11 +132,15 @@ header {
     }
 }
 
+/* การปรับขนาดของรูปภาพเมื่อแสดงบนอุปกรณ์พกพา */
+
 @media screen and (max-width: 768px) {
     .home-img img {
         max-width: 70%;
     }
 }
+
+/* การปรับขนาดของข้อความเมื่อแสดงบนอุปกรณ์พกพา */
 
 @media screen and (max-width: 768px) {
     .home-content h3 {
