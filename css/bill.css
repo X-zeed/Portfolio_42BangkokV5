@@ -77,7 +77,7 @@ body {
 }
 
 .navbar {
-    width: 100%;
+    width: 98.4%;
     background: none;
     display:grid;
     align-items: center;
@@ -108,8 +108,8 @@ body {
     background: rgb(161, 20, 20);
 }
 
-.last{
-    margin-left: 20px;
+section{
+    margin-top: 90px;
 }
 
 .home {
@@ -311,7 +311,7 @@ section .education {
 
 @media (max-width: 1200px) {
     .header {
-        width: 195px;
+        width: 180px;
     }
 }
 
